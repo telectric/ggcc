@@ -11,8 +11,6 @@ Comandos de ZXAN product C300 (ZTE Corporation)
 
 **Recepción de potencia en todas las ont del ramal** 
 
-gpon-olt_frame/slot/port
-
 {% highlight bash %}
 show pon power onu-rx gpon-olt_1/2/9
 
@@ -84,6 +82,52 @@ pon-onu-mng gpon-onu_1/5/12:3
 !
 {% endhighlight %}
 
+**Configuración de la interfaz de la onu/ont**
+
+{% highlight bash %}
+show running-config interface gpon-onu_1/5/12:3
+Building configuration...
+interface gpon-onu_1/5/12:3
+  fec upstream
+  sn-bind disable
+  vport-mode onu def-map-type 1:1
+  tcont 1 name DATA profile 50M
+  gemport 1 name DATOS tcont 1
+  gemport 2 name VOZ tcont 1 queue 5
+  gemport 2 traffic-limit upstream 512K_VOZ downstream 512K_VOZ
+  vport 1 map-type cos+vlan
+  vport-map 1 1 cos 0 vlan 1074
+  vport-map 1 2 cos 5 vlan 1074
+  switchport mode hybrid vport 1
+  service-port 1 vport 1 user-vlan 1074 vlan 80
+  service-port 1 description DATOS
+  ip dhcp snooping enable vport 1
+  port-identification format FLEXIBLE-SYNTAX sport 1
+  dhcpv6-l2-relay-agent enable sport 1
+  dhcpv4-l2-relay-agent enable sport 1
+  ip-source-guard enable sport 1
+  traffic-profile 50M vport 1 direction egress
+  security max-mac-learn 1 vport 1
+!
+end
+{% endhighlight %}
+
+**Configuración de la interfaz de toda la rama**
+
+{% highlight bash %}
+
+show running-config interface gpon-olt_1/5/12
+Building configuration...
+interface gpon-olt_1/5/12
+  no shutdown
+  linktrap disable
+  fec downstream
+  onu 1 type modelo_onu pw xxxx vport-mode onu
+  onu 2 type modelo_onu pw xxxx vport-mode onu
+!
+end
+{% endhighlight %}
+
 **Mostrar MAC**
 
 {% highlight bash %}
@@ -115,6 +159,9 @@ Onu                 Rx power
 ------------------------------------
 gpon-onu_1/5/12:3   -20.222(dbm)
 {% endhighlight %}
+
+ONT en modo router
+------------------
 
 **Configurar onu/ont en modo router**
 
