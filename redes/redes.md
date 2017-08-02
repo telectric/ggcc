@@ -1,7 +1,7 @@
 ---
 layout: page
-title: REDES
-permalink: /redes/
+title: RED
+permalink: /red/
 ---
 
 <div class="home">

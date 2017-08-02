@@ -3,6 +3,7 @@ layout: post
 title:  "Troubleshooting básico OLT C300"
 
 categories: ftth
+tag: redes
 ---
 
 
@@ -37,8 +38,8 @@ ONU interface:         gpon-onu_1/2/9:1
   Phase state:         working
   Authentication mode: pw
   SN Bind:             disable
-  Serial number:       ZTEGC08C6866
-  Password:            XFbNf1
+  Serial number:       XXXXXXXXX
+  Password:            XXXX
   Device ID:
   Description:         ONU-9:1
   Vport mode:          onu

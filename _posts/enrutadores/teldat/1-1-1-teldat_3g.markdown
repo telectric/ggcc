@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Router Teldat 3G, comandos básicos" 
+title:  "Teldat M1: Comandos básicos y UMTS" 
 
 categories: teldat
+tags: lte
 ---
 
 Acceso inicial
@@ -383,9 +384,7 @@ Para mostrar la configuración.
 
 {% highlight C %}
 router Config>show config
-.
-.
-.
-{% endhighlight %}
 
-Con esto termina la entrada de introducción.
+*** configuración no mostrada ***
+
+{% endhighlight %}
