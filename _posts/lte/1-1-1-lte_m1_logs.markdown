@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Diagnóstico LTE M1"
+title:  "TELDAT M1: LOGS LTE"
 
 categories: lte
 tag: lte
@@ -82,8 +82,4 @@ NOMBRE_M1 ELS+nvrlog list 100
 {% endhighlight %}
 
 Desde `ELS+` se podrán ver los logs también con `ELS+ view`.
-
-
-Interfaces radio M1
-------------------- 
 
