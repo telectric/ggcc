@@ -9,7 +9,7 @@ tag: lte
 LOG M1 LTE
 ---------- 
 
-Lo primero es acceder remotamente al equipo mediante telnet os ssh a la looback desde el equipo de gestión dispuesto para ello.
+En primer lugar accederemos remotamente al equipo mediante telnet os ssh a la looback desde el equipo de gestión dispuesto para ello.
 
 Una vez en el equipo resulta de utilidad revisar el log de este, para ello accedemos al menú `process 2` que listará los útimos eventos. Al tratarese de un acceso LTE podemos activar un log específico para obtener mayor información.
 
