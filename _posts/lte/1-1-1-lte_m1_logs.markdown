@@ -81,5 +81,5 @@ NOMBRE_M1 ELS+nvrlog list 100
 
 {% endhighlight %}
 
-Desde `ELS+` se podrán ver los logs también con `ELS+ view`.
+Desde `ELS+` se podrán ver los logs también con `ELS+ view history`.
 
