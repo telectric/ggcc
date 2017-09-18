@@ -3,7 +3,7 @@ layout: post
 title:  "Teldat M1: Comandos básicos y UMTS" 
 
 categories: teldat
-tags: lte
+tags: teldat
 ---
 
 Acceso inicial

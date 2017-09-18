@@ -3,7 +3,7 @@ layout: post
 title:  "Teldat M1: Comandos LTE"
 
 categories: teldat
-tags: lte
+tags: teldat
 ---
 
 Troubleshooting 4G
