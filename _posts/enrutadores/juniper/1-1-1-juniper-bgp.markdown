@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Juniper: Troubleshooting BGP"
+title:  "JUNPER MX480: DIAGNÓSTICO BGP"
 
 categories: juniper
 tags: bgp
