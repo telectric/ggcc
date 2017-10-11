@@ -1,0 +1,18 @@
+# Site settings
+#title: "Telectric | Blog de tecnología"
+title: "GGCC"
+#email: info@telectric.es
+lema: Grandes Cuentas
+description: "PyME"
+baseurl: ""
+url: ""
+#twitter_username: telectric_es
+#github_username:  telectric
+# Build settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+#redcarpet
+#kramdown
+#permalink: pretty
+permalink: /:categories/:title.html
